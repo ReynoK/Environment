@@ -1,3 +1,5 @@
+## Tmux的使用
+
 ommand | Des |
 | --- | --- |
 | `tmux ls`  | 显示所有session |
@@ -68,7 +70,7 @@ ommand | Des |
 
 #### layout模式
 
-| Shourtcut | self-def| DES |
+| Shourtcut | self-define| Des |
 | --- | --- | --- |
 | Ctrl + left || 调整pannel大小，**往左位移1个单元格** |
 | Ctrl + right || 调整pannel大小， **往右位移1个单元格** |
@@ -94,8 +96,8 @@ ommand | Des |
 
 ```
 set-option -g default-command "reattach-to-user-namespace -l zsh"
- 99 bind y run "tmux save-buffer - | reattach-to-user-namespace pbcopy" \; display-message "已复制到剪切板"  #display-message "Copied tmux buffer to system cl    ipboard"  # 按y复制到系统剪切板
-100 bind C-v run "reattach-to-user-namespace pbpaste | tmux load-buffer - && tmux paste-buffer" #按prefix Ctrl+v粘贴
+bind y run "tmux save-buffer - | reattach-to-user-namespace pbcopy" \; display-message "已复制到剪切板"  #display-message "Copied tmux buffer to system cl    ipboard"  # 按y复制到系统剪切板
+bind C-v run "reattach-to-user-namespace pbpaste | tmux load-buffer - && tmux paste-buffer" #按prefix Ctrl+v粘贴
 ```
 
 
