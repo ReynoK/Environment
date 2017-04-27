@@ -21,7 +21,7 @@ def main(wf):
             subtitle='search',
             arg=query,
             valid=True,
-            icon=ICON_WEB)
+            icon='icon.png')
     else:
         for index,tag in tags.items():
             wf.add_item(title=tag['value'],
